@@ -1,0 +1,47 @@
+.postCard {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: rgb(228, 226, 226);
+  padding: 20px;
+  border-radius: 5px;
+  gap: 20px;
+}
+
+.postCardFirst {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.postCardSecond {
+  display: flex;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 5px;
+}
+
+.postCardFourth {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.postCardSecond > img {
+  width: 100%;
+  max-height: 50vw;
+  min-height: 25vw;
+  object-fit: cover;
+}
+
+.postCardThird {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}

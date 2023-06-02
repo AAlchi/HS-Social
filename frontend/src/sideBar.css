@@ -1,0 +1,56 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2px;
+  align-items: flex-start;
+  padding: 10px 0px 0px 0px;
+  max-width: 10%;
+  margin-right: 5%;
+}
+
+.phone > div {
+  background-color: white;
+  width: 25px;
+  height: 15px;
+  border-radius: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(228, 226, 226);
+  border-top: 2px solid white;
+  width: 20vw;
+  gap: 20px;
+  height: 85vh;
+  padding: 2vw;
+  min-width: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sideBar > ul {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.sideBar > ul > li {
+  padding: 15px;
+  list-style-type: none;
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .sideBar {
+    position: absolute;
+  }
+}

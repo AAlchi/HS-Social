@@ -39,24 +39,20 @@ export default function Sidebar() {
         <li>Following</li>
         <li onClick={logOut}>Log Out</li>
       </ul>
-      {window.innerWidth > 760 ? (
-        <div></div>
-      ) : (
-        <>
-          <h2>Your Friends</h2>
-          <h5>Recent Chats</h5>
-          <ul>
-            <li>Homee</li>
-            <li>HS Video</li>
-            <li onClick={account}>Account</li>
-            <li>Friends</li>
-            <li>Followers</li>
-            <li>Following</li>
-            <li onClick={logOut}>Log Out</li>
-          </ul>
-        </>
-      )}
 
+      <>
+        <h2 className="hidden">Your Friends</h2>
+        <h5 className="hidden">Recent Chats</h5>
+        <ul className="hidden">
+          <li className="hidden">Homee</li>
+          <li className="hidden">HS Video</li>
+          <li className="hidden">Account</li>
+          <li className="hidden">Friends</li>
+          <li className="hidden">Followers</li>
+          <li className="hidden">Following</li>
+          <li className="hidden">Log Out</li>
+        </ul>
+      </>
       <br></br>
       <br></br>
       <h3>&copy; 2023 HS Social</h3>

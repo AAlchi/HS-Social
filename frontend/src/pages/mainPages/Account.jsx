@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../offScreen/Header.jsx";
 import Sidebar from "../offScreen/Sidebar.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,6 +12,18 @@ import data from "./data.js";
 import RightBar from "../offScreen/RightBar.jsx";
 
 export default function Account() {
+  const [editingAccount, setEditingAccount] = useState(false);
+  const [accountStatus, setAccountStatus] = useState("public");
+
+  const handleAccountStatusChange = (event) => {
+    const status = event.target.value;
+    setAccountStatus(status);
+  };
+
+  const editAccount = () => {
+    setEditingAccount(!editingAccount);
+  };
+
   return (
     <div style={{ overflow: "hidden", height: "100vh" }}>
       <Header />
@@ -20,26 +32,89 @@ export default function Account() {
         <div className="homeMain">
           <br></br>
           <div className="makeAPost">
-            <h3>Hello there Test!</h3>
-            <h6>Make a Post</h6>
-            <input type="file" id="file" style={{ display: "none" }} />
-            <label htmlFor="file" className="fontDeduction1 imageClass1">
-              <img src="/file.jpg" alt="image" />
-              Select a Pic
-            </label>
-            <label className="fontDeduction1">Share something</label>
-            <input
-              className="classNameForInputBecauseIDontKnowWhatElseToNameThis"
-              type="text"
-              name="username"
-            />
-            <div className="buttons">
-              <button style={{ width: "80%", minWidth: "200px" }} type="submit">
-                Post
-              </button>
+            <h2>Your Account</h2>
+            <div className="inputsForAccount">
+              <div>
+                <label>Full Name</label>
+                {editingAccount ? (
+                  <input type="text" />
+                ) : (
+                  <span style={{ padding: "10px" }}>
+                    - ThisIsTheTestFullName
+                  </span>
+                )}
+              </div>
+              <div>
+                <label>Username</label>
+                {editingAccount ? (
+                  <input type="text" />
+                ) : (
+                  <span style={{ padding: "10px" }}>
+                    - ThisIsTheTestFullName
+                  </span>
+                )}
+              </div>
+              <div>
+                <label>Email</label>
+                {editingAccount ? (
+                  <input type="text" />
+                ) : (
+                  <span style={{ padding: "10px" }}>
+                    - ThisIsTheTestFullName
+                  </span>
+                )}
+              </div>
+              <div>
+                <label>Account Status</label>
+
+                {editingAccount ? (
+                  <>
+                    <div>
+                      <label>Public</label>
+                      <input
+                        checked={accountStatus === "public"}
+                        onChange={handleAccountStatusChange}
+                        value="public"
+                        type="radio"
+                      />
+                    </div>
+                    <div>
+                      <label>Private</label>
+                      <input
+                        checked={accountStatus === "private"}
+                        onChange={handleAccountStatusChange}
+                        value="private"
+                        type="radio"
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <span style={{ padding: "10px" }}>- Private</span>
+                )}
+              </div>
+            </div>
+            <div>
+              {editingAccount ? (
+                <button
+                  style={{ backgroundColor: "blue" }}
+                  className="AccountConfirmButton"
+                  onClick={editAccount}
+                >
+                  Update Account
+                </button>
+              ) : (
+                <button
+                  style={{ backgroundColor: "blue" }}
+                  className="AccountConfirmButton"
+                  onClick={editAccount}
+                >
+                  Edit Account
+                </button>
+              )}
+              <button>Change Password</button>
+              <button>Delete Account</button>
             </div>
           </div>
-          <h2 style={{ color: "black" }}>Your Feed</h2>
 
           <br></br>
           <br></br>

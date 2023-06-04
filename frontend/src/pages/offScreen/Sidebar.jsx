@@ -33,13 +33,20 @@ export default function RightBar() {
       <h2>Your Friends</h2>
       <h5>Recent Chats</h5>
       <ul>
-        <li>Home</li>
-        <li>HS Video</li>
-        <li onClick={account}>Account</li>
-        <li>Friends</li>
-        <li>Followers</li>
-        <li>Following</li>
-        <li onClick={logOut}>Log Out</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
+        <li>Friend</li>
       </ul>
       <br></br>
       <br></br>

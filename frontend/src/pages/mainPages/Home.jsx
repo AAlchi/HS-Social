@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import data from "./data.js";
 import RightBar from "../offScreen/RightBar.jsx";
+import People from "../components/People.jsx";
 
 export default function Home() {
   return (
@@ -39,6 +40,8 @@ export default function Home() {
               </button>
             </div>
           </div>
+          <h2>People You Might Know</h2>
+          <People />
           <h2 style={{ color: "black" }}>Your Feed</h2>
 
           {data.posts

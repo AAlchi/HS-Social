@@ -1,6 +1,17 @@
+import {
+  faHouseChimney,
+  faVideo,
+  faPersonWalkingArrowRight,
+  faNewspaper,
+  faPeopleArrows,
+  faChildReaching,
+  faPersonWalking,
+  faPersonBooth,
+} from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Sidebar() {
   const isSidebarOpen = useSelector((state) => state.someSlice.isSidebarOpen);
@@ -13,6 +24,10 @@ export default function Sidebar() {
 
   const account = () => {
     navigate("/account");
+  };
+
+  const news = () => {
+    navigate("/news");
   };
 
   const home = () => {
@@ -30,27 +45,44 @@ export default function Sidebar() {
     >
       <h2>Controls</h2>
       <ul>
-        <li onClick={home}>Home</li>
-        <li>HS Video</li>
-        <li onClick={account}>Account</li>
-        <li>Friends</li>
-        <li>News</li>
-        <li>Followers</li>
-        <li>Following</li>
-        <li onClick={logOut}>Log Out</li>
+        <li onClick={home}>
+          <FontAwesomeIcon icon={faHouseChimney} /> Home
+        </li>
+        <li>
+          {" "}
+          <FontAwesomeIcon icon={faVideo} /> HS Video
+        </li>
+        <li onClick={account}>
+          <FontAwesomeIcon icon={faChildReaching} /> Account
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faPeopleArrows} /> Friends
+        </li>
+        <li onClick={news}>
+          <FontAwesomeIcon icon={faNewspaper} /> News
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faPersonBooth} /> Followers
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faPersonWalking} /> Following
+        </li>
+        <li onClick={logOut}>
+          <FontAwesomeIcon icon={faPersonWalkingArrowRight} /> Log Out
+        </li>
       </ul>
 
       <>
         <h2 className="hidden">Your Friends</h2>
         <h5 className="hidden">Recent Chats</h5>
         <ul className="hidden">
-          <li className="hidden">Homee</li>
-          <li className="hidden">HS Video</li>
-          <li className="hidden">Account</li>
-          <li className="hidden">Friends</li>
-          <li className="hidden">Followers</li>
-          <li className="hidden">Following</li>
-          <li className="hidden">Log Out</li>
+          <li className="hidden">Friend</li>
+          <li className="hidden">Friend</li>
+          <li className="hidden">Friend</li>
+          <li className="hidden">Friend</li>
+          <li className="hidden">Friend</li>
+          <li className="hidden">Friend</li>
+          <li className="hidden">Friend</li>
         </ul>
       </>
       <br></br>

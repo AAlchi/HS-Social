@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./css/index.css";
 import App from "./App";
-import "./sideBar.css";
+import "./css/sideBar.css";
 import { Provider } from "react-redux";
 import store from "./store";
-import "./card.css";
+import "./css/card.css";
+import "./css/account.css";
+import "./css/people.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

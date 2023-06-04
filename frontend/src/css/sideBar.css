@@ -4,7 +4,7 @@
   width: 100%;
   gap: 2px;
   align-items: flex-start;
-  padding: 10px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   max-width: 10%;
   margin-right: 5%;
 }
@@ -28,8 +28,8 @@
   height: 85vh;
   padding: 2vw;
   min-width: 200px;
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .sideBar > ul {

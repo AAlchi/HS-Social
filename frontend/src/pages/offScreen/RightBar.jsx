@@ -34,10 +34,6 @@ export default function Sidebar() {
     navigate("/");
   };
 
-  const toggleSidebar = () => {
-    dispatch({ type: "TOGGLE_SIDEBAR" });
-  };
-
   return (
     <div
       className="sideBar"

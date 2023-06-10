@@ -4,6 +4,7 @@ body {
 
 header {
   display: flex;
+  justify-content: flex-start;
   flex-direction: row;
   background-color: rgb(228, 226, 226);
   width: 100%;
@@ -24,17 +25,20 @@ header {
 
 .headerLogo > div {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
 }
 
 .mainForHome {
   display: flex;
+  justify-content: flex-start;
 }
 
 .homeMain {
   width: 100%;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
@@ -44,6 +48,7 @@ header {
 
 .makeAPost {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   background-color: rgb(228, 226, 226);
   border-radius: 5px;
@@ -65,6 +70,7 @@ button {
   color: white;
   border-radius: 5px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.6);
@@ -81,5 +87,6 @@ label {
 @media (max-width: 760px) {
   .hidden {
     display: flex;
+    justify-content: flex-start;
   }
 }

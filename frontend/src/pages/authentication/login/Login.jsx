@@ -1,7 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/");
+  };
   return (
     <div className="main">
       <form className="login">
@@ -30,7 +34,11 @@ export default function Login() {
           </div>
           <br></br>
           <div className="buttons">
-            <button style={{ width: "100%", minWidth: "200px" }} type="submit">
+            <button
+              onClick={handleLogin}
+              style={{ width: "100%", minWidth: "200px" }}
+              type="submit"
+            >
               Log In
             </button>
           </div>

@@ -40,7 +40,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <h2>People You Might Know</h2>
+          <h2 style={{ marginLeft: "0px" }}>People You Might Know</h2>
           <People />
           <h2 style={{ color: "black" }}>Your Feed</h2>
 
@@ -70,11 +70,11 @@ export default function Home() {
                   </label>
                   <div className="postCardThird">
                     <label className="fontDeduction1 imageClass1">
-                      <FontAwesomeIcon icon={faThumbsUp} />
+                      <FontAwesomeIcon icon={faThumbsUp} color="blue" />
                       Like
                     </label>
                     <label className="fontDeduction1 imageClass1">
-                      <FontAwesomeIcon icon={faThumbsDown} color="blue" />
+                      <FontAwesomeIcon icon={faThumbsDown} />
                       Dislike
                     </label>
                     <label className="fontDeduction1 imageClass1">

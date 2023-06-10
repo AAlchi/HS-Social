@@ -3,14 +3,12 @@ const data = {
     {
       _id: 1,
       username: "Bruh",
-      profilePicture:
-        "https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg",
+      profilePicture: "./girl.jpg",
     },
     {
       _id: 2,
       username: "Hello There!",
-      profilePicture:
-        "https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg",
+      profilePicture: "./tree.jpg",
     },
     {
       _id: 3,
@@ -21,20 +19,17 @@ const data = {
     {
       _id: 4,
       username: "Person",
-      profilePicture:
-        "https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg",
+      profilePicture: "tech.jpg",
     },
     {
       _id: 5,
       username: "The Guy",
-      profilePicture:
-        "https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg",
+      profilePicture: "girl.jpg",
     },
     {
       _id: 6,
       username: "Complete",
-      profilePicture:
-        "https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg",
+      profilePicture: "./tech.jpg",
     },
     {
       _id: 7,
@@ -48,8 +43,7 @@ const data = {
       _id: 1,
       username: "John Mcgucket",
       date: "6/13/2023",
-      image:
-        "https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg",
+      image: "./tree.jpg",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elitatione Lorem ipsum dolor sit amet, consectetur adipisicing elitatione Lorem ipsum dolor sit amet, consectetur adipisicing elitatione",
     },
@@ -57,7 +51,7 @@ const data = {
       _id: 2,
       username: "Dwayne Rock",
       date: "6/3/2023",
-      image: "/file.jpg",
+      image: "./tech.jpg",
       description:
         "ectetur adipisicing elit dolor sit amet,atione Lorem ipsum consectetur adipisicing elitatione Lorem ipsum dolor sit amet, consectetur adipisicing elitatione",
     },

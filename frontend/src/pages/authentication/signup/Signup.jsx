@@ -1,8 +1,12 @@
 import React from "react";
 import "./signup.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Signup() {
+  const navigate = useNavigate();
+  const handleSignup = () => {
+    navigate("/login");
+  };
   return (
     <div className="main">
       <form className="login">
@@ -49,7 +53,11 @@ export default function Signup() {
           </div>
           <br></br>
           <div className="buttons">
-            <button style={{ width: "100%", minWidth: "200px" }} type="submit">
+            <button
+              onClick={handleSignup}
+              style={{ width: "100%", minWidth: "200px" }}
+              type="submit"
+            >
               Sign Up
             </button>
           </div>
